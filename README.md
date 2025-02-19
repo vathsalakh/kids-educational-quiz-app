@@ -13,42 +13,39 @@ The **Kids Educational Quiz Web App** is a fun and interactive online applicatio
 - **Safe & Ad-Free**: A distraction-free learning environment.
 
 ## 🏗️ Tech Stack
-- **Frontend**: React.js / Next.js
-- **Backend**: Python (Flask/Django for API)
-- **Database**: PostgreSQL / Firebase
-- **Authentication**: Firebase / Django Auth (for user login)
-- **Hosting**: Vercel / AWS
+- **Framework**: Django / Flask (Python-based)
+- **Database**: PostgreSQL / SQLite
+- **Authentication**: Django Auth / Flask-Login (for user login)
+- **Hosting**: AWS / DigitalOcean
 
 ## 🛠️ Installation & Setup
 ### **Prerequisites**
-- Node.js installed
 - Python 3.x installed
 - Install dependencies:
 
 ```bash
-npm install
 pip install -r requirements.txt
 ```
 
 ### **Run the Application**
 ```bash
-npm run dev
-python backend.py
+python manage.py runserver  # For Django
+flask run  # For Flask
 ```
 
 ## 📂 Project Structure
 ```
 📂 kids-quiz-web-app
-│── 📁 frontend          # Frontend source code (React/Next.js)
-│── 📁 backend           # Backend source code (Flask/Django)
-│── 📁 public            # Static files (Images, icons, etc.)
+│── 📁 app               # Application source code (Django/Flask)
+│── 📁 templates         # HTML templates
+│── 📁 static            # CSS, JavaScript, images
 │── 📁 docs              # Documentation files
 │── requirements.txt     # Backend dependencies
 │── README.md            # Project overview
 ```
 
 ## 📸 Screenshots
-![App Screenshot](public/screenshot1.png)
+![App Screenshot](static/screenshot1.png)
 
 ## 🔮 Future Enhancements
 - Multiplayer quiz mode
